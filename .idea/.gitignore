@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Node modules
+./node_modules
+
+# Cypress screenshots and videos
+./cypress/screenshots/
+./cypress/videos/
