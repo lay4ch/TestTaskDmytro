@@ -15,3 +15,10 @@ SELECT p.last_name, p.first_name, c.number
 FROM people p
 JOIN cards c ON p.id = c.people_id
 ORDER BY p.last_name, p.first_name;
+
+-- third task in case we should not duplicate people
+SELECT p.last_name AS lastName, p.first_name AS firstName, GROUP_CONCAT(c.number) AS cardNumbers
+FROM people p
+JOIN cards c ON p.id = c.people_id
+GROUP BY p.id
+ORDER BY p.last_name, p.first_name;
